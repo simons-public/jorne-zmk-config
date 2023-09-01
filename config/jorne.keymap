@@ -13,6 +13,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -76,10 +77,10 @@
 
         config_layer {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &trans  &rgb_ug RGB_COLOR_HSB(241,100,50)  &rgb_ug RGB_COLOR_HSB(122,100,50)  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_TOG  &trans  &trans  &trans  &trans  &trans             &trans  &sys_reset
-            &bt BT_SEL 1  &trans                    &rgb_ug RGB_SAI                    &rgb_ug RGB_EFF                  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &trans  &trans  &trans  &trans  &trans  &ext_power EP_TOG
-            &bt BT_SEL 3  &trans                    &rgb_ug RGB_SAD                    &rgb_ug RGB_EFR                  &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &trans  &trans  &trans  &trans  &trans        &bootloader
-                                                                                                &trans                           &trans           &trans  &trans  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &out OUT_TOG  &rgb_ug RGB_COLOR_HSB(241,100,50)  &rgb_ug RGB_COLOR_HSB(122,100,50)  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_TOG  &trans  &trans  &trans  &trans  &trans             &trans  &sys_reset
+            &bt BT_SEL 1  &out OUT_BLE                    &rgb_ug RGB_SAI                    &rgb_ug RGB_EFF                  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &trans  &trans  &trans  &trans  &trans  &ext_power EP_TOG
+            &bt BT_SEL 3  &out OUT_USB                    &rgb_ug RGB_SAD                    &rgb_ug RGB_EFR                  &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &trans  &trans  &trans  &trans  &trans        &bootloader
+                                                                                                      &trans                           &trans           &trans  &trans  &trans  &trans
             >;
 
             label = "Config";
