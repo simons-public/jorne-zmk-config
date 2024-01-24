@@ -18,7 +18,10 @@
 
 &led_strip { chain-length = <28>; };
 
-&mt { tapping-term-ms = <400>; };
+&mt {
+    tapping-term-ms = <400>;
+    flavor = "balanced";
+};
 
 / {
     combos {
