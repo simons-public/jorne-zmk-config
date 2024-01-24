@@ -21,6 +21,15 @@
 &mt { tapping-term-ms = <400>; };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Dual-Shift-Caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <39 42>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
