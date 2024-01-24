@@ -25,7 +25,7 @@
         compatible = "zmk,combos";
 
         Dual-Shift-Caps {
-            bindings = <&kp LOCKING_CAPS>;
+            bindings = <&kp CAPSLOCK>;
             key-positions = <39 42>;
         };
     };
