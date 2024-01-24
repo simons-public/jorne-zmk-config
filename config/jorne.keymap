@@ -60,10 +60,10 @@
 
         media_numpad_layer {
             bindings = <
-&trans  &trans  &trans  &kp C_BRIGHTNESS_INC      &kp C_PREV  &kp C_NEXT        &kp C_VOLUME_UP  &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH   &trans  &trans
-        &trans  &trans  &kp C_BRIGHTNESS_DEC      &kp C_STOP  &kp C_PLAY_PAUSE  &kp C_VOL_DN     &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PERIOD  &trans
-        &trans  &trans  &kp C_BRIGHTNESS_MINIMUM  &kp K_PREV  &kp K_NEXT        &kp C_MUTE       &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL   &trans
-                                                  &trans      &trans            &lt 5 RET        &lt 5 ESC     &trans        &trans
+&trans  &trans  &trans  &kp C_BRIGHTNESS_INC      &kp C_PREV  &kp C_NEXT        &kp C_VOLUME_UP  &kp PLUS      &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9  &kp SLASH   &trans  &trans
+        &trans  &trans  &kp C_BRIGHTNESS_DEC      &kp C_STOP  &kp C_PLAY_PAUSE  &kp C_VOL_DN     &kp MINUS     &kp NUMBER_4     &kp NUMBER_5  &kp NUMBER_6  &kp PERIOD  &trans
+        &trans  &trans  &kp C_BRIGHTNESS_MINIMUM  &kp K_PREV  &kp K_NEXT        &kp C_MUTE       &kp NUMBER_0  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL   &trans
+                                                  &trans      &trans            &lt 5 RET        &lt 5 ESC     &kp KP_NUMBER_0  &trans
             >;
 
             label = "Media Numpad";
